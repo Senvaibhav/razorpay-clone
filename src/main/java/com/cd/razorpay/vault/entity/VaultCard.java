@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "vault_card")
-public class VaultCard {
+public class  VaultCard {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

@@ -9,6 +9,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "settlement")
+//To handle money we use this settlement
 public class Settlement {
 
     @Id

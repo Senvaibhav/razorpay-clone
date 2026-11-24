@@ -12,13 +12,13 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "refund")
-public class Refund {
+public class  Refund {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @ManyToOne(fetch = FetchType.LAZY,optional = false)
+    @ManyToOne(fetch = FetchType.LAZY,optional = false) //may be some error refund got cancel that why we will raise another request for refund that why @ManyToOne
     @JoinColumn(name = "payment_id",nullable = false)
     private Payment payment;
 
